@@ -1,0 +1,167 @@
+.navl{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    text-align: center;
+    background-color: black;
+}
+.brand{
+    z-index: 998;
+    height: 100px;
+    width: 260px;
+}
+.brand .logo{
+    width:90px; position: absolute; top: 5px; left: 5px;
+    border-radius: 50%;
+    
+  -webkit-transition: width 1s, -webkit-transform 1s;
+  transition: width 1s, transform 1s;
+}
+.brand:hover .logo{
+    width: 200px;
+    z-index: 2000;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+.brand:hover .one{
+    display: none;
+}
+.brand:hover .two{
+    display: none;
+}
+.brand:hover .thr{
+    display: none;
+}
+
+.navbar{
+    z-index: 999;
+    border-radius: 0;
+    background-color: black;
+    font-weight: 900;
+    margin: 0;
+    opacity: 0.8;
+    font-family: 'Cormorant Upright', cursive;
+}
+#myNavbar{
+    font-size: 2.4vw;
+}
+
+#mya{
+    color: white;
+    /* border-radius: 10px; */
+    -moz-transition: all 300ms ease-out;
+    -webkit-transition: all 300ms ease-out;
+    -o-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+}
+
+#mya:hover{
+    color: rgb(255, 0, 0);
+    -moz-transform: translate3d(0px, 5px, 0px);
+    -webkit-transform: translate3d(0px, 5px, 0px);
+    -o-transform: translate(0px, 5px);
+    -ms-transform: translate(0px, 5px);
+    transform: translate3d(0px, 5px, 0px);
+}
+
+.its{
+    position: absolute;
+    top: 8px;
+    left: 105px;
+    font-size: 40px;
+    color: red;
+    font-family: 'Cormorant Upright', cursive;
+    z-index: 1999;
+}
+
+.me{
+    position: absolute;
+    top: 10px;
+    left: 155px;
+    font-size: 20px;
+    color: red;
+    font-family: 'Cormorant Upright', cursive;
+    width: 130px;
+    z-index: 1999;
+}
+
+.for{
+    position: absolute;
+    top: 62px;
+    left: 172px;
+    font-size: 20px;
+    color: red;
+    font-family: 'Cormorant Upright', cursive;
+    z-index: 1999;
+}
+@media screen and (max-width: 948px){
+    .brand{
+        width: 150px;
+    }
+    
+    #mya{
+        padding: 10px;
+    }
+}
+@media screen and (max-width: 767px){
+    .brand .logo{
+        width: 50px;
+    }.brand:hover .logo{
+        width: 50px;
+        z-index: 2000;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+    .brand:hover .one{
+        display: block;
+    }
+    .brand:hover .two{
+        display: block;
+    }
+    .brand:hover .thr{
+        display: block;
+    }
+    
+    .brand{
+        width: 0;
+        height: 0;
+    }
+    .navbar{
+        opacity: 1;
+    }
+    .navl{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    #myNavbar{
+        font-size: 3vw;   
+    }
+    .brand .for{
+        position: absolute;
+    top: 36px;
+    left: 90px;
+    font-size: 10px;
+    color: red;
+    font-family: serif;
+    z-index: 1999;
+    }
+    .brand .me{
+        position: absolute;
+    top: 10px;
+    left: 80px;
+    font-size: 10px;
+    color: red;
+    font-family: serif;
+    width: 70px;
+    z-index: 1999;
+    }
+    .brand .its{
+        position: absolute;
+    top: 8px;
+    left: 55px;
+    font-size: 20px;
+    color: red;
+    font-family: serif;
+    z-index: 1999;
+    }
+}
+

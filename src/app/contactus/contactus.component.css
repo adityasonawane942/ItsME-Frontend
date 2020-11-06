@@ -1,0 +1,132 @@
+.bg3{
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    /* height: 100vh; */
+    z-index: -2;
+  }
+
+  .bg1{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -500px;
+    z-index: -4;
+    background-color: #DA5D6F;
+    background-repeat: repeat-y;
+  }
+
+  .full-color{
+    background-color: black;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -150;
+  }
+
+  .headr{
+    font-family: 'Playball', cursive;
+    font-size: 6vw;
+    color: black;
+}
+.outer{
+  margin-top: 100px; text-align: center; color: black; font-family: 'Cormorant Upright', cursive; font-weight: 900;}
+
+a{
+    color: black;
+}
+
+span{
+    opacity: 0.5;
+    margin: 10px;
+    font-size: 4vw;
+    transition: ease 0.5s;
+}
+
+span:hover{
+    opacity: 1;
+}
+
+ .content{
+     font-size: 3vw;
+    font-weight: 900;
+}
+#content2{
+    vertical-align: middle;
+    font-weight: 900;
+    font-size: 2.5vw;
+}
+
+.outer{
+    text-align: center;
+    /* height: 100vh; */
+}
+
+.col-sm-6{
+    padding-top: 1%;
+}
+
+#cont{
+    margin: 3%;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+.dp{
+    border-radius: 50%; width: 20vw; height: 20vw;
+}
+
+@media screen and (max-width: 767px){
+    .content{
+        font-size: 4vw;
+        margin: 0;
+    }
+    .col-sm-4, .col-sm-8{
+        padding: 0;
+    }
+    .col-sm-4{
+        position: relative;
+        top: -10px;
+    }
+    .col-sm-8{
+        position: relative;
+        top: 12px;
+    }
+    /* .row{
+        width: 80%;
+        height: 16vw;
+        position: relative;
+        left: 5%;
+    } */
+    #content2{
+        font-size: 3vw;
+    }
+
+    .dp{
+        border-radius: 50%;
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .outer{
+        height: 150vh;
+    }
+
+    span{
+        font-size: 4vw;
+    }
+    .col-sm-4{
+        display: inline-block;
+        width: 30%;
+    }
+    .col-sm-8{
+        display: inline-block;
+        width: 65%;
+    }
+    .bg3{
+        top: 56px;
+    }
+}
